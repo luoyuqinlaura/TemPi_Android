@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/tempWeather"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#64B5F6"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="San José"
+            android:textColor="@color/white"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCity"
+            android:text="California"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/txtTime"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/weather" />
+
+        <TextView
+            android:id="@+id/txtValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTime"
+            android:text="32"
+            android:textColor="@color/white"
+            android:textSize="80dp" />
+
+        <TextView
+            android:id="@+id/tempWeather_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTime"
+            android:layout_toRightOf="@id/txtValue"
+            android:text="°"
+            android:textColor="@color/white"
+            android:textSize="80dp" />
+
+        <ImageView
+            android:id="@+id/imgFeelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgIcon"
+
+            android:src="@drawable/temp" />
+
+        <TextView
+            android:id="@+id/txtTitleFeelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_below="@id/imgIcon"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgFeelLike"
+            android:text="Feel like:"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/feelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgIcon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtTitleFeelLike"
+            android:text="28°"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tempRoom"
+        android:layout_below="@id/tempWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tempLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Living Room"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tempRoomValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempLocation"
+            android:text="32"
+            android:textSize="90dp" />
+
+        <TextView
+            android:id="@+id/tempRoomValue_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempLocation"
+            android:layout_toRightOf="@id/tempRoomValue"
+            android:text="°"
+            android:textSize="90dp" />
+
+        <ImageView
+            android:id="@+id/roomThermometer"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/tempLocation"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/thermometer" />
+
+        <TextView
+            android:id="@+id/temp_thingspeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tempRoomValue"
+            android:layout_marginTop="30dp"
+            android:text="Find history temperature:"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/room_thingspeak_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/roomThermometer"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/thingspeak_logo"/>
+
+    </RelativeLayout>
+</RelativeLayout>
