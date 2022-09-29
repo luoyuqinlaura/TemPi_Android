@@ -10,10 +10,10 @@ It  is designed to connect user’s Android phone with our IOT (Internet of thin
 
 ## App Walk-through
 
-<img src="load.png" width = "500">
-<img src="login.png" width = "500">
-<img src="position.png" width = "500">
-<img src="temp.png" width = "500">
+<img src="load.png" width = "250">
+<img src="login.png" width = "250">
+<img src="position.png" width = "250">
+<img src="temp.png" width = "250">
 
 ## Related Skills
 * Data Monitor
